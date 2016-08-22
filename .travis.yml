@@ -15,8 +15,7 @@ branches:
 
 before_script:
  - cd ./trollbox/
- - npm validate
-
+ - npm install
 script:
  - node validate.js
 
