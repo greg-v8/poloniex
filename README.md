@@ -11,13 +11,11 @@ Merge to `stage` branch triggers Travis CI to:
 
 ## trollbox.js
 
-develop [![Build Status](https://travis-ci.org/greg-v8/poloniex.svg?branch=develop)](https://travis-ci.org/greg-v8/poloniex)
-
-stage [![Build Status](https://travis-ci.org/greg-v8/poloniex.svg?branch=stage)](https://travis-ci.org/greg-v8/poloniex)
-
-version [![Build Status](https://travis-ci.org/greg-v8/poloniex.svg?branch=version)](https://travis-ci.org/greg-v8/poloniex)
-
 Connects to the Poloniex push trollbox API with Autobahn.
+
+[![Build Status](https://travis-ci.org/greg-v8/poloniex.svg?branch=stage)](https://travis-ci.org/greg-v8/poloniex) stage branch
+
+[![Build Status](https://travis-ci.org/greg-v8/poloniex.svg?branch=version)](https://travis-ci.org/greg-v8/poloniex) version branch
 
 #### GitHub Repository
     $ git clone git@github.com:greg-v8/poloniex.git
