@@ -24,3 +24,4 @@ after_success:
  - docker build -f Dockerfile -t gregv8/trollbox:8080 .
  - docker tag gregv8/trollbox:0.1.0 gregv8/trollbox:travis-$TRAVIS_BUILD_NUMBER
  - docker push gregv8/trollbox
+ 
