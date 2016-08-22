@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "shelljs": "^0.7.3",
+    "yargs": "^4.8.1"
+  },
+  "author": "",
+  "license": "See License in README.MD"
+}

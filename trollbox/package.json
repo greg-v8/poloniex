@@ -1,0 +1,13 @@
+{
+  "name": "trollbox",
+  "version": "0.0.0",
+  "description": "poloniex trollbox",
+  "main": "trollbox.js",
+  "scripts": {
+    "start": "node trollbox.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "autobahn": "^0.10.1"
+  }
+}
