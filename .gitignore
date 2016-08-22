@@ -1,4 +1,5 @@
 node_modules/
+trollbox/node_modules/
 deploy.js
 stage.sh
 merge.sh
