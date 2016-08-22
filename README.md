@@ -40,7 +40,7 @@ example port:
     $ curl localhost:32768
 
 ## .travis.yml
-Environment Variables:
+Environment variables set locally:
 
     $ travis env set DOCKER_USERNAME myusername
     $ travis env set DOCKER_PASSWORD secretsecret
