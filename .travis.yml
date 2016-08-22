@@ -1,25 +1,27 @@
 sudo: required
 
 language: nodejs
-- '6'
+
+node:
+ - '6'
 
 services:
-- docker
+ - docker
 
 branches:
-except:
-- develop
-- master
+ except:
+ - develop
+ - master
 
 before_script:
-- cd ./trollbox/
-- npm install
+ - cd ./trollbox/
+ - npm install
 
 script:
-- node validate.js
+ - node validate.js
 
 after_success:
-- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
-- docker tag gregv8/trollbox:0.1.0 gregv8/trollbox:travis-$TRAVIS_BUILD_NUMBER
-- docker push gregv8/trollbox
+ - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+ - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
+ - docker tag gregv8/trollbox:0.1.0 gregv8/trollbox:travis-$TRAVIS_BUILD_NUMBER
+ - docker push gregv8/trollbox
