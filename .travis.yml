@@ -1,4 +1,4 @@
-#2016:8:23:0:29:29
+#2016:8:23:0:34:9
 sudo: required
 
 language: nodejs
@@ -26,4 +26,4 @@ after_success:
 # - docker push gregv8/trollbox
  - git config user.name $GITHUB_USERNAME
  - git config user.name $GITHUB_PASSWORD
- - git checkout version
+ - git status
