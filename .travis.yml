@@ -1,4 +1,4 @@
-#2016:8:23:8:12:35
+#2016:8:23:8:14:35
 sudo: required
 
 language: nodejs
@@ -26,5 +26,5 @@ after_success:
 # - docker push gregv8/trollbox
  - git config user.name $GITHUB_USERNAME
  - git config user.name $GITHUB_PASSWORD
- - git status
- - git fetch origin version - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG develop:version
+ - git fetch origin version
+ - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG develop:version
