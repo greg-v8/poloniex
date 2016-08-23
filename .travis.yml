@@ -23,4 +23,3 @@ after_success:
  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
  - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
  - docker push gregv8/trollbox
- 

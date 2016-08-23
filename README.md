@@ -1,12 +1,12 @@
 # poloniex ci
 Merge to `stage` branch triggers Travis CI to:
   - run validate.js and if successful:
-    - build `gregv8/app_name:version` on DockerHub
+    - build `gregv8/trollbox:version` on DockerHub
 
 [TO-DO - ci]
 
     - merge `stage` into `version` branch
-    - create Git tag and release `app_name-version`
+    - create Git tag and release `ersion`
 
 ## trollbox.js
 Connects to the Poloniex push trollbox API with Autobahn.
