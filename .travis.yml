@@ -1,4 +1,4 @@
-#2016:8:22:22:29:32
+#2016:8:22:23:3:25
 sudo: required
 
 language: nodejs
@@ -23,4 +23,4 @@ script:
 after_success:
  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
  - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
- - docker push gregv8/trollbox
+ - docker push gregv8/trollbox# - git request-pull 0.1.0 $TRAVIS_REPO_SLUG
