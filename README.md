@@ -44,6 +44,8 @@ Environment variables set locally:
 
     $ travis env set DOCKER_USERNAME myusername
     $ travis env set DOCKER_PASSWORD secretsecret
+    $ travis env set GITHUB_USERNAME myusername
+    $ travis env set DOCKER_PASSWORD secretsecret
 
 ### resources
 https://git-scm.com/book/en/v2/Git-Basics-Tagging
