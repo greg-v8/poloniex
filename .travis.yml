@@ -1,4 +1,4 @@
-#2016:8:22:23:13:40
+#2016:8:22:23:16:33
 sudo: required
 
 language: nodejs
@@ -21,7 +21,7 @@ script:
  - node validate.js
 
 after_success:
- - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
- - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
- - docker push gregv8/trollbox
- - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG version:0.1.0
+# - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+# - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
+# - docker push gregv8/trollbox
+ - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG version
