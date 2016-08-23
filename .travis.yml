@@ -1,0 +1,30 @@
+#2016:8:23:8:0:43
+sudo: required
+
+language: nodejs
+
+node:
+ - '6'
+
+services:
+ - docker
+
+branches:
+ except:
+ - develop
+ - master
+
+before_script:
+ - cd ./trollbox/
+ - npm install
+script:
+ - node validate.js
+
+after_success:
+# - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+# - docker build -f Dockerfile -t gregv8/trollbox:0.1.0 .
+# - docker push gregv8/trollbox
+ - git config user.name $GITHUB_USERNAME
+ - git config user.name $GITHUB_PASSWORD
+ - git status
+ - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG
