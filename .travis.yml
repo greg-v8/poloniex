@@ -1,4 +1,4 @@
-#2016:8:23:8:1:48
+#2016:8:23:8:3:46
 sudo: required
 
 language: nodejs
@@ -27,4 +27,4 @@ after_success:
  - git config user.name $GITHUB_USERNAME
  - git config user.name $GITHUB_PASSWORD
  - git status
- - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG
+ - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG stage:version
