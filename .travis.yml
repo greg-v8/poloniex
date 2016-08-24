@@ -1,4 +1,4 @@
-#2016:8:23:8:25:57
+#2016:8:23:8:25:58
 sudo: required
 
 language: nodejs
@@ -28,7 +28,7 @@ after_success:
  - git config user.name $GITHUB_PASSWORD
  - git fetch origin stage
  - git fetch origin version
- - git request-pull 0.1.0 https://github.com/$TRAVIS_REPO_SLUG stage:version
+ - git request-pull 0.1.2 https://github.com/$TRAVIS_REPO_SLUG stage:version
 # - git checkout version
 # - git merge stage
 # - git push origin version
